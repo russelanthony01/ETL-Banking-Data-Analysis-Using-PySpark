@@ -1,0 +1,78 @@
+2025-Nov-01-04:00:30 | INFO | Log Setup Completed Successfully : Logs will now be written to log file.
+2025-Nov-01-04:00:30 | INFO | Start Time : 2025-Nov-01-04:00:30
+
+2025-Nov-01-04:00:30 | INFO | Step 1 : Extraction Phase.
+
+2025-Nov-01-04:00:33 | DEBUG | Webpage read successfully.
+2025-Nov-01-04:00:33 | DEBUG | Required Table extracted successfully.
+2025-Nov-01-04:00:36 | DEBUG | Spark Banking DataFrame has been created successfully.
+2025-Nov-01-04:00:41 | INFO | Extraction of Banking Data from webpage Successful.
+2025-Nov-01-04:00:42 | DEBUG | Columns have been renamed successfully.
+2025-Nov-01-04:00:42 | INFO | Exchange Rate Dataset has been loaded into memory.
+2025-Nov-01-04:00:42 | DEBUG | No Missing Values were detected in Exchange Rate Dataset.
+2025-Nov-01-04:00:42 | DEBUG | Spark Exchange Rate DataFrame created successfully.
+2025-Nov-01-04:00:42 | DEBUG | Spark Exchange Rate DataFrame cached successfully.
+2025-Nov-01-04:00:43 | INFO | Extraction Step has been ---> Completed Successfully.
+
+2025-Nov-01-04:00:43 | INFO | Step 2 : Transformation (Data Cleaning)
+
+2025-Nov-01-04:00:43 | DEBUG | Standardizing of the Bank Name feature is done by cleaning spaces.
+2025-Nov-01-04:00:45 | DEBUG | Checking for Missing Values in Banking Dataset.
+2025-Nov-01-04:00:45 | INFO | No missing values were reported.
+2025-Nov-01-04:00:46 | INFO | Missing Values has been taken care of in the Banking Dataset.
+2025-Nov-01-04:00:46 | INFO | The Number of Rows in our PySpark Banking Dataset : 10 Rows.
+2025-Nov-01-04:00:46 | DEBUG | Duplicate Banks have been checked and removed successfully.
+2025-Nov-01-04:00:47 | DEBUG | A scalable Currency Dictionary has been created with Currency Names and Exchange Rate.
+2025-Nov-01-04:00:47 | INFO | New Market Capital features (In Different Currencies) have been derived with the help of Exchange Rate Dataframe.
+2025-Nov-01-04:00:48 | DEBUG | New Market Capital features (In Different Currencies) have been renamed successfully.
+
+2025-Nov-01-04:00:48 | INFO | Step 3 : Performing Outlier Analysis
+
+2025-Nov-01-04:00:48 | INFO | `Pandas API on Spark` has been enabled successfully.
+2025-Nov-01-04:00:48 | DEBUG | A function has been defined, for performing Outlier Analysis.
+2025-Nov-01-04:00:53 | WARNING | A possible outlier has been detected : Number of Possible Outliers : 1
+2025-Nov-01-04:00:53 | INFO | Data Transformation and Data Cleaning and Outlier Handling ---> Completed Successfully.
+
+2025-Nov-01-04:00:53 | INFO | Step 4 : Loading the Data (Saving the Cleaned Dataset)
+
+2025-Nov-01-04:00:54 | DEBUG | The Banking Dataset has been saved successfully.
+2025-Nov-01-04:00:55 | DEBUG | The PySpark Banking Dataset has been converted to Pandas for Visualization (No Sampling Required).
+2025-Nov-01-04:00:55 | INFO | Data has been Saved and Loaded ---> Completed Successfully.
+
+2025-Nov-01-04:00:55 | INFO | Step 5 : Data Visualization
+
+2025-Nov-01-04:00:55 | INFO | Market Capitalization : Distribution Analysis using Histogram.
+2025-Nov-01-04:00:55 | DEBUG | Temporary DataFrame created for analyzing Top 10 Banks.
+2025-Nov-01-04:00:56 | INFO | Market Capitalization : Top 10 Banks - Distribution Analysis using Bar Charts.
+2025-Nov-01-04:00:56 | DEBUG | Correlation Analysis performed successfully between Market Capitalization and Bank Ranking.
+2025-Nov-01-04:00:56 | INFO | Relationship between Market Capitalization and Bank Ranking.
+2025-Nov-01-04:00:56 | INFO | Market Capitalization Analysis using Box Plot for detecting Spread and Outliers.
+2025-Nov-01-04:00:56 | INFO | Market Capitalization Quartile Distribution using Violin Plot.
+2025-Nov-01-04:00:56 | DEBUG | Cumulative Market Share DataFrame has been created temporarily.
+2025-Nov-01-04:00:56 | DEBUG | Cumulative Market Share DataFrame has been created temporarily.
+2025-Nov-01-04:00:57 | INFO | Line Plot - Cumulative Market Share Analysis.
+2025-Nov-01-04:00:57 | DEBUG | Market Cap Tiers function was defined and a new feature has been derived.
+2025-Nov-01-04:00:57 | INFO | Market Capitalization Range Distribution using Market Cap Tiers.
+2025-Nov-01-04:00:57 | DEBUG | Pie Charts can be misleading at times, Manual Percentage Distribution Calculations Completed.
+2025-Nov-01-04:00:57 | INFO | Pie Chart - Market Share Percentage Distribution.
+2025-Nov-01-04:00:57 | INFO | Data Visualization ---> Completed Successfully.
+
+2025-Nov-01-04:00:57 | INFO | Step 6 : ETL and Querying
+
+2025-Nov-01-04:00:58 | DEBUG | A new feature 'DENSE_RANK' has been derived successfully. The New DataFrame has been cached.
+2025-Nov-01-04:00:58 | DEBUG | Spark DataFrame has been cached and action has been called to allow smooth operations.
+2025-Nov-01-04:00:58 | DEBUG | The User has been prompted to choose a currency for further analysis.
+2025-Nov-01-04:01:16 | INFO | The User has chosen USD for further ETL querying and Dashboard.
+2025-Nov-01-04:01:18 | INFO | Advanced Market Capitalization Analysis with Growth Metrics Successful.
+2025-Nov-01-04:01:21 | INFO | Market Concentration Analysis based on Market Share Tiers Successful.
+2025-Nov-01-04:01:22 | INFO | Statistical Distribution : Market Capitalization Distribution using Quartile Analysis Successful.
+2025-Nov-01-04:01:24 | INFO | Comparative Size Analysis based on Relative Market Size Successful.
+2025-Nov-01-04:01:25 | INFO | Market Growth and Gap Analysis Successful.
+2025-Nov-01-04:01:26 | INFO | Market Dominance Analysis - Cumulative Market Share and Individual Dominance Score Successful.
+2025-Nov-01-04:01:27 | INFO | Market Dominance Analysis - Cumulative Market Share and Cumulative Dominance Score Successful.
+2025-Nov-01-04:01:27 | INFO | Segment Wise Analysis based on Market Capitalization Ranges Successful.
+2025-Nov-01-04:01:27 | DEBUG | Plotly has been imported Successfully.
+2025-Nov-01-04:01:29 | INFO | Comprehensive Performance Dashboard for Bank Rankings and Metrics Successful.
+2025-Nov-01-04:01:29 | INFO | End Time : 2025-Nov-01-04:01:29
+2025-Nov-01-04:01:29 | INFO | ETL Total Duration (Runtime) : 0 minutes and 59 seconds
+2025-Nov-01-04:01:29 | INFO | ETL and Querying ---> Completed Successfully.
