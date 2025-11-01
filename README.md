@@ -10,7 +10,8 @@ The goal is to practice Spark-based data processing, financial analytics, and lo
 ### 🧰 Tools & Technologies
 - Python  
 - PySpark  
-- Pandas  
+- Pandas
+- Plotly 
 - Matplotlib  
 - Local S3 directory simulation  
 
