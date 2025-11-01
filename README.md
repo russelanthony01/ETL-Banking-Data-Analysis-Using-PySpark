@@ -59,6 +59,8 @@ The goal is to practice Spark-based data processing, financial analytics, and lo
 ### 📎 Data Source
 Wikipedia — *List of largest banks by market capitalization*
 
+> **Note:** In several steps, `.toPandas()` was used to convert Spark DataFrames to pandas DataFrames. This was done primarily to make the results easier to view and display clearly on GitHub and within the notebook environment. In real large-scale workloads, Spark display functions would be used instead to avoid unnecessary memory usage.
+
 ---
 
 ### 📜 License
